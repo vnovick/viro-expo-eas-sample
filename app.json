@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "expo-viro-eas",
+    "owner": "vennity-ext",
     "slug": "expo-viro-eas",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -15,18 +16,19 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vnovick.expoviroeas"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.vnovick.expoviroeas"
     },
+    "plugins": ["@viro-community/react-viro"],
     "web": {
       "favicon": "./assets/images/favicon.png"
     }
